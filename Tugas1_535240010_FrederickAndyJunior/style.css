@@ -1,0 +1,49 @@
+/* awalnya saya ingin membuat setiap informasi cv dalam kotak-kotak, dimana
+   ada bagian dimana kotak bisa bersampingan dengan kotak lain,
+   tetapi kotak-kotak yang berukuran berbeda akan ada gap / celah besar, gak sesuai margin,
+   jadi saya mencari cara yang berbeda di luar materi, dengan ketentuan tidak ada materi flexbox
+   dan harus menggunakan media query*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(249, 242, 242);
+}
+
+h1 {
+    text-align: center;
+}
+
+.top{
+    width: 400px;
+    border: 1px solid #c4c5c3;
+    margin: 5px auto;
+    border-radius: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid #c4c5c3;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* menggunakan grid, jika ukuran < 900 / di hp, hanya 1 kolom dalam baris */
+/* fr = fraction, jadi jika ada 3 fr, dan sesuatu mengambil 2 fr, maka ukurannya 2/3 dari ukuran yang biasa dipakai */
+.row {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+/* media query */
+@media (min-width: 900px) {
+    /* jika ukuran lebih dari 900px (laptop), satu baris ada 3 kolom */
+    .row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
