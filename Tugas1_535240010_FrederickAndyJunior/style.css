@@ -7,11 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: rgb(249, 242, 242);
-}
-
-h1 {
-    text-align: center;
+    background-color: rgb(43, 43, 84);
+    color: white;
 }
 
 .top{
@@ -19,7 +16,7 @@ h1 {
     border: 1px solid #c4c5c3;
     margin: 5px auto;
     border-radius: 100px;
-    background-color: white;
+    background-color: rgb(24, 24, 46);
     text-align: center;
 }
 
@@ -28,8 +25,12 @@ h1 {
     padding: 5px;
     padding-left: 20px;
     margin: 5px;
-    border-radius: 8px;
-    background-color: white;
+    border-radius: 16px;
+    background-color: rgb(24, 24, 46);
+}
+
+.box > h2{
+    text-align: center;
 }
 
 /* menggunakan grid, jika ukuran < 900 / di hp, hanya 1 kolom dalam baris */
